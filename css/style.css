@@ -410,8 +410,8 @@ form .input {
   width: 100%;
   border: 1px solid var(--dark-blue);
   color: var(--dark-color);
-  font-size: 25px;
-  padding: 0 10px;
+  font-size: clamp(16px,5VW,22px);
+  padding: 5px 10px;
 }
 
 .input textarea {
