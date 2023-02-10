@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="My personal portfolio." />
+    <title>Abdelaziz Mohamed Badis - Full Stack Web Developer</title>
+    <link rel="icon" href="./assets/icon.png">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;1,400&display=swap"
+        rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="./fontawesome/css/all.css" rel="stylesheet">
+</head>
+<body>
+    <header id="home">
+        <nav id="top-nav">
+            <div class="info">
+                <div class="profile-picture-container">
+                    <div class="profile-picture"></div>
+                </div>
+                <p class="name"><a href="#home">ABDELAZIZ MOHAMED BADIS</a></p>
+            </div>
+            <div class="sections">
+                <span><a href="#home" class="home active">HOME</a></span>
+                <span><a href="#about" class="about active">ABOUT</a></span>
+                <span><a href="#projects" class="projects active">PROJECTS</a></span>
+                <span><a href="#contact" class="contact active">CONTACT</a></span>
+                <span class="mobile-menu-icon" onclick="toggleMobileMenu()"><i
+                        class="fa-solid fa-bars fa-2x"></i></span>
+            </div>
+            <div class="sections-mobile">
+                <span><a href="#home" class="home-section" onclick="hideMobileMenu()">HOME</a></span>
+                <span><a href="#about" class="about-section" onclick="hideMobileMenu()">ABOUT</a></span>
+                <span><a href="#projects" class="projects-section" onclick="hideMobileMenu()">PROJECTS</a></span>
+                <span><a href="#contact" class="contact-section" onclick="hideMobileMenu()">CONTACT</a></span>
+            </div>
+        </nav>
+        <div id="hero-section">
+            <div class="hero-section-title-container">
+                <h1>HEY, I'M BADIS</h1>
+            </div>
+            <p>A motivated Software Engineering graduate with experience building solid and
+                elegant dynamic websites looking for an opportunity to grow my skills in an innovative environment.
+            </p>
+            <a href="#projects"><button>PROJECTS</button></a>
+            <img src="./assets/Console.png" alt="console 1" id="parallax-object-1" class="parallax-object"
+                data-value="-6">
+            <img src="./assets/Console2.png" alt="console 2" id="parallax-object-2" class="parallax-object"
+                data-value="8">
+        </div>
+    </header>
+ 
+    <main>
+        <section id="about">
+            <article class="about-me" data-aos="zoom-in">
+                <h1>ABOUT ME</h1>
+                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi inventore commodi eos, soluta numquam
+                    fugit molestiae sequi exercitationem ducimus dignissimos hic animi nostrum, ipsum culpa recusandae?
+                    Obcaecati rem maiores harum molestiae sequi exercitationem ducimus dignissimos hic animi nostrum,
+                    ipsum culpa
+                    recusandae? Obcaecati rem maiores harum.</P>
+                <a href="#contact"><button>CONTACT</button></a>
+            </article>
+
+            <article class="my-skills" data-aos="zoom-in">
+                <h1>MY SKILLS</h1>
+                <div class="skills">
+                    <span class="skill">HTML</span>
+                    <span class="skill">CSS</span>
+                    <span class="skill">JavaScript</span>
+                    <span class="skill">jQuery</span>
+                    <span class="skill">Bootstrap</span>
+                    <span class="skill">React</span>
+                    <span class="skill">Django</span>
+                    <span class="skill">PHP</span>
+                    <span class="skill">SQL databases</span>
+                    <span class="skill">WordPress</span>
+                    <span class="skill">OpenCart</span>
+                    <span class="skill">C</span>
+                    <span class="skill">Java</span>
+                    <span class="skill">Python</span>
+                    <span class="skill">Git</span>
+                    <span class="skill">SEO</span>
+                </div>
+            </article>
+
+        </section>
+        <section id="projects">
+            <h1>PROJECTS</h1>
+            <div class="projects-container">
+                <article class="project" data-aos="fade-right">
+                    <h1>Luxury Escape</h1>
+                    <div class="project-image-container">
+                        <img src="./assets/luxury escape.png" alt="project screenshot">
+                    </div>
+                    <div class="skills-used">
+                        <span class="skill">HTML</span>
+                        <span class="skill">CSS</span>
+                        <span class="skill">JavaScript</span>
+                    </div>
+                    <p>web site for a travel agency.</p>
+                    <div class="project-links">
+                        <a href="https://mbadisab.github.io/Luxury-Escape/" target="_blank"><button class="live"><i class="fa-solid fa-square-arrow-up-right"></i> LIVE</button></a>
+                        <a href="https://github.com/MBadisAb/Luxury-Escape" target="_blank"><button class="source-code"><i class="fa-brands fa-square-github"></i> CODE</button></a>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section id="contact">
+            <form onsubmit="sendEmail(); reset(); return false;" data-aos="fade-up">
+                <h1>CONTACT</h1>
+                <div class="input">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name">
+                </div>
+
+                <div class="input">
+                    <label for="email">Email</label>
+                    <input type="email" name="name" id="email">
+                </div>
+
+                <div class="input">
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message"></textarea>
+                </div>
+                <input type="submit" value="SUBMIT">
+
+            </form>
+        </section>
+    </main>
+  
+    <footer>
+        <div class="main-content">
+            <div class="info">
+                <h1>ABDELAZIZ MOHAMED BADIS</h1>
+                <p>A motivated Software Engineering graduate with experience building solid and elegant dynamic websites
+                    looking for an opportunity to grow my skills in an innovative environment.</p>
+            </div>
+            <div class="social">
+                <h1>SOCIAL</h1>
+                <div class="links">
+                    <span class="github"><a href="https://github.com/BadisAb" target="_blank"><i
+                                class="fa-brands fa-github fa-2x"></i></a></span>
+                    <span class="linkedin"><a href="https://www.linkedin.com/in/mbadisab/" target="_blank"><i
+                                class="fa-brands fa-linkedin fa-2x"></i></a></span>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">© Copyright 2023. Made with ❤️ by Abdelaziz Mohamed Badis</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./fontawesome/js/all.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://code.tidio.co/ahdz0ojcj1pkqs3cwlnbox5ykeddccod.js" async></script>
+</body>
+
+</html>
